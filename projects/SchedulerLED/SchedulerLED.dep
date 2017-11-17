@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+    <fileVersion>2</fileVersion>
+    <fileChecksum>659850</fileChecksum>
+    <configuration>
+        <name>Debug</name>
+        <outputs>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\Users\uidn8311\Downloads\Scheduler\Project_Settings\Common\Std_Types.h</file>
+            <file>$PROJ_DIR$\Debug\Exe\SchedulerLED.out</file>
+            <file>$PROJ_DIR$\Debug\Obj\Main.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\Main.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\SchM.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\SchedulerLED.pbd</file>
+            <file>D:\RepoGitSVN\AEP_WindowLifterProject\MCAL\wdt.h</file>
+            <file>D:\RepoGitSVN\AEP_WindowLifterProject\MCAL\scg.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\SchM.pbi</file>
+            <file>$PROJ_DIR$\..\..\lib\HAL\clock.c</file>
+            <file>$PROJ_DIR$\..\..\lib\MCAL\systick.h</file>
+            <file>D:\RepoGitSVN\AEP_WindowLifterProject\MCAL\wdt.c</file>
+            <file>D:\RepoGitSVN\AEP_WindowLifterProject\MCAL\scg.c</file>
+            <file>$PROJ_DIR$\..\..\lib\HAL\clock.h</file>
+            <file>$PROJ_DIR$\..\..\lib\HAL\delays.c</file>
+            <file>$PROJ_DIR$\..\..\lib\HAL\delays.h</file>
+            <file>D:\RepoGitSVN\AEP_WindowLifterProject\MCAL\lpit.c</file>
+            <file>D:\RepoGitSVN\AEP_WindowLifterProject\MCAL\lpit.h</file>
+            <file>D:\RepoGitSVN\AEP_WindowLifterProject\MCAL\pcc.c</file>
+            <file>D:\RepoGitSVN\AEP_WindowLifterProject\MCAL\pcc.h</file>
+            <file>$PROJ_DIR$\..\..\lib\HAL\button.c</file>
+            <file>$PROJ_DIR$\..\..\lib\HAL\button.h</file>
+            <file>D:\RepoGitSVN\AEP_WindowLifterProject\MCAL\io.c</file>
+            <file>D:\RepoGitSVN\AEP_WindowLifterProject\MCAL\io.h</file>
+            <file>D:\RepoGitSVN\AEP_WindowLifterProject\MCAL\port.c</file>
+            <file>D:\RepoGitSVN\AEP_WindowLifterProject\MCAL\port.h</file>
+            <file>$PROJ_DIR$\..\..\lib\HAL\segmentbar.c</file>
+            <file>$PROJ_DIR$\..\..\lib\HAL\segmentbar.h</file>
+            <file>$PROJ_DIR$\..\..\lib\HAL\leds.c</file>
+            <file>$PROJ_DIR$\..\..\lib\HAL\leds.h</file>
+            <file>$PROJ_DIR$\..\..\lib\SERVICES\Interrupts\interrupts.c</file>
+            <file>$PROJ_DIR$\..\..\lib\SERVICES\Interrupts\interrupts.h</file>
+            <file>$PROJ_DIR$\..\..\lib\MCAL\nvic.c</file>
+            <file>$PROJ_DIR$\..\..\lib\MCAL\nvic.h</file>
+            <file>$PROJ_DIR$\..\..\lib\MCAL\systick.c</file>
+            <file>$PROJ_DIR$\Debug\Obj\Main.__cstat.et</file>
+            <file>$PROJ_DIR$\..\..\lib\SERVICES\Scheduler\SchM_Tasks.h</file>
+            <file>$PROJ_DIR$\..\..\lib\SERVICES\Scheduler\SchM_Tasks.c</file>
+            <file>$PROJ_DIR$\..\..\lib\SERVICES\Scheduler\SchM_Types.h</file>
+            <file>$PROJ_DIR$\..\..\lib\Common\Std_Types.h</file>
+            <file>$TOOLKIT_DIR$\config\linker\NXP\S32K144.icf</file>
+            <file>$PROJ_DIR$\Debug\List\SchedulerLED.map</file>
+            <file>$TOOLKIT_DIR$\lib\m7M_tls.a</file>
+            <file>$PROJ_DIR$\..\..\lib\SERVICES\Scheduler\SchM_Cfg.c</file>
+            <file>$PROJ_DIR$\Main.c</file>
+            <file>$TOOLKIT_DIR$\lib\shb_l.a</file>
+            <file>$TOOLKIT_DIR$\lib\rt7M_tl.a</file>
+            <file>$TOOLKIT_DIR$\lib\dl7M_tln.a</file>
+            <file>$PROJ_DIR$\..\..\lib\SERVICES\Scheduler\SchM_Cfg.h</file>
+            <file>$PROJ_DIR$\..\..\lib\SERVICES\Scheduler\SchM.h</file>
+            <file>$PROJ_DIR$\..\..\lib\SERVICES\Scheduler\SchM.c</file>
+            <file>$PROJ_DIR$\..\TimerInt\timerint.h</file>
+            <file>$PROJ_DIR$\..\TimerInt\timerint.c</file>
+        </outputs>
+        <file>
+            <name>$PROJ_DIR$\Debug\Exe\SchedulerLED.out</name>
+            <outputs>
+                <tool>
+                    <name>ILINK</name>
+                    <file> 41</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ILINK</name>
+                    <file> 40 2 45 46 42 47</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\Main.c</name>
+            <outputs>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 35</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 3</file>
+                </tool>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 2</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 16 43 29 26 12 14 30 7 19 33 38 9 20 28 50 13 11 6 15 18 22 31 32 48 36 39 17 21 24 23 25 27 34 10 49 37</file>
+                </tool>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 39 9 13 12 7 11 6 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 10 50 49 38 43 48 37 36</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>[ROOT_NODE]</name>
+            <outputs>
+                <tool>
+                    <name>ILINK</name>
+                    <file> 1 41</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\lib\SERVICES\Scheduler\SchM.c</name>
+            <outputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 8</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 49 39 48</file>
+                </tool>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 49 39 48</file>
+                </tool>
+            </inputs>
+        </file>
+    </configuration>
+    <configuration>
+        <name>Release</name>
+        <outputs />
+        <forcedrebuild>
+            <name>[MULTI_TOOL]</name>
+            <tool>ILINK</tool>
+        </forcedrebuild>
+    </configuration>
+</project>

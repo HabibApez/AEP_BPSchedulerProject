@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspace>
+    <project>
+        <path>$WS_DIR$\SchedulerLED\SchedulerLED.ewp</path>
+    </project>
+    <project>
+        <path>$WS_DIR$\New folder\Stepper Motor Control.ewp</path>
+    </project>
+    <project>
+        <path>$WS_DIR$\TimerInt\Timer Interrupt.ewp</path>
+    </project>
+    <batchBuild />
+</workspace>
