@@ -78,16 +78,15 @@ void SysTick_Init(tCallbackFunction Callback);
  *  Critical/explanation : No
  **************************************************************/ 
 void SchM_OsTick(void){
-  T_UBYTE lub_index;
-  //SchM_Control.SchM_OsTickCounter++;
+  T_UBYTE lub_Index;
 
-    for(lub_index = 0; lub_index < SchM_ConfigGlobal->SchM_NumOfTasks; lub_index++){
-      if(((SchM_ConfigGlobal->SchM_TaskDescriptor[lub_index].SchM_TaskMask) & (SchM_Control.SchM_OsTickCounter)) == SchM_ConfigGlobal->SchM_TaskDescriptor[lub_index].SchM_TaskOffset){
+    for(lub_Index = 0; lub_Index < SchM_ConfigGlobal->SchM_NumOfTasks; lub_Index++){
+      if(((SchM_ConfigGlobal->SchM_TaskDescriptor[lub_Index].SchM_TaskMask) & (SchM_Control.SchM_OsTickCounter)) == SchM_ConfigGlobal->SchM_TaskDescriptor[lub_Index].SchM_TaskOffset){
         if(SCHM_RUNNING == SchM_Control.SchM_State){
           SchM_Control.SchM_State = SCHM_OVERLOAD;      // Set Overload Flag 
           leds_TurnOnDownLED();
         }
-        SchM_TaskControlBlock[lub_index].SchM_TaskState = SCHM_TASK_STATE_READY;
+        SchM_TaskControlBlock[lub_Index].SchM_TaskState = SCHM_TASK_STATE_READY;
       }		
       else {
         // No-Task to be executed
@@ -104,16 +103,16 @@ void SchM_OsTick(void){
  *  Critical/explanation : No
  **************************************************************/
  void SchM_Background(void){
-  T_UBYTE LocTaskIdx;  // Protect this variable due to an interrupt
+  T_UBYTE lub_LocTaskIdx;  // Protect this variable due to an interrupt
   while(1){
-    for(LocTaskIdx = 0; LocTaskIdx < SchM_ConfigGlobal->SchM_NumOfTasks; LocTaskIdx++){
-      if(SCHM_TASK_STATE_READY == SchM_TaskControlBlock[LocTaskIdx].SchM_TaskState){
-	SchM_TaskControlBlock[LocTaskIdx].SchM_TaskState = SCHM_TASK_STATE_RUNNING;
+    for(lub_LocTaskIdx = 0; lub_LocTaskIdx < SchM_ConfigGlobal->SchM_NumOfTasks; lub_LocTaskIdx++){
+      if(SCHM_TASK_STATE_READY == SchM_TaskControlBlock[lub_LocTaskIdx].SchM_TaskState){
+	SchM_TaskControlBlock[lub_LocTaskIdx].SchM_TaskState = SCHM_TASK_STATE_RUNNING;
         SchM_Control.SchM_State = SCHM_RUNNING;
 	leds_TurnOnUpLED();
-        SchM_ConfigGlobal->SchM_TaskDescriptor[LocTaskIdx].SchM_TaskFunctionPtr();
+        SchM_ConfigGlobal->SchM_TaskDescriptor[lub_LocTaskIdx].SchM_TaskFunctionPtr();
 	leds_TurnOffUpLED();
-        SchM_TaskControlBlock[LocTaskIdx].SchM_TaskState = SCHM_TASK_STATE_SUSPENDED;
+        SchM_TaskControlBlock[lub_LocTaskIdx].SchM_TaskState = SCHM_TASK_STATE_SUSPENDED;
 	SchM_Control.SchM_State = SCHM_IDLE;
       }
       else{ 

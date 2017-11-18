@@ -69,8 +69,8 @@
  **************************************************************/
 void SchM_3p125ms_Task(void){   /* Code Task0*/
   segmentbar_TurnOnSeg0();
-  delays_Wait500us();         /* Comment this line to observe the CPU load change */
   delays_Wait500us();
+  //delays_Wait500us();         /* Comment this line to observe the CPU load change */
   segmentbar_TurnOffSeg0();
 }
 
