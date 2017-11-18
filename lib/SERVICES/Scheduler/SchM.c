@@ -51,7 +51,6 @@ const SchM_ConfigType *SchM_ConfigGlobal;
 
 /* Variables */
 /*============================================================================*/
-//T_UBYTE lub_index = 0;
 
 SchM_ControlType SchM_Control={0, SCHM_UNINIT};
 
@@ -144,16 +143,18 @@ void SchM_Init(const SchM_ConfigType *SchM_Config){
   SchM_Control.SchM_State = SCHM_INIT;
 }
 
-///////////////////////////
-
+/**************************************************************
+ *  Name                 : SysTick_Init
+ *  Description          : Initializes the SysTick
+ *  Parameters           : [tCallbackFunction Callback]
+ *  Return               : void
+ *  Critical/explanation : No
+ **************************************************************/
 void SysTick_Init(tCallbackFunction Callback){
   interrupts_InitIRQ(SysTick_IRQn, 0xA);
-  // interrupts_ConfigSysTickIRQ(31250);  
-  interrupts_ConfigSysTickIRQ(62500);  
-  GlbSysTickCallback = Callback;  // Configure SysTick Clock
-                  // Enable interrupt 
+  interrupts_ConfigSysTickIRQ(62500);   // Configure SysTick Clock
+  GlbSysTickCallback = Callback;  
 }
-
 
 /**************************************************************
  *  Name                 : SchM_Init
