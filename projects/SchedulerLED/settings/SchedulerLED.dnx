@@ -138,13 +138,6 @@
     <watch_formats>
         <Fmt0>{W}1:SCHM_OFFSET_ZERO	3	0</Fmt0>
     </watch_formats>
-    <DisassembleMode>
-        <mode>0</mode>
-    </DisassembleMode>
-    <Breakpoints>
-        <Bp0>_ "STD_CODE" "{C:\My Documents\Continental\IAR\Devs\lib\SERVICES\Scheduler\SchM.c}.179.1" 0 0 0 0 "" 0 "" 0</Bp0>
-        <Count>1</Count>
-    </Breakpoints>
     <LogFile>
         <LoggingEnabled>_ 0</LoggingEnabled>
         <LogFile>_ ""</LogFile>
@@ -154,6 +147,13 @@
         <LoggingEnabled>_ 0</LoggingEnabled>
         <LogFile>_ ""</LogFile>
     </TermIOLog>
+    <DisassembleMode>
+        <mode>0</mode>
+    </DisassembleMode>
+    <Breakpoints>
+        <Bp0>_ "STD_CODE" "{C:\My Documents\Continental\IAR\Devs\lib\SERVICES\Scheduler\SchM.c}.179.1" 0 0 0 0 "" 0 "" 0</Bp0>
+        <Count>1</Count>
+    </Breakpoints>
     <Aliases>
         <Count>0</Count>
         <SuppressDialog>0</SuppressDialog>

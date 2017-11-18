@@ -23,9 +23,9 @@
 
 if ($debugfile -eq "")
 {
-& "C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.0\common\bin\cspybat" -f "C:\My Documents\Continental\IAR\Devs\projects\SchedulerLED\settings\SchedulerLED.Debug.general.xcl" --backend -f "C:\My Documents\Continental\IAR\Devs\projects\SchedulerLED\settings\SchedulerLED.Debug.driver.xcl" 
+& "C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.0\common\bin\cspybat" -f "D:\RepoGitSVN\AEP_BPSchedulerProject\projects\SchedulerLED\settings\SchedulerLED.Debug.general.xcl" --backend -f "D:\RepoGitSVN\AEP_BPSchedulerProject\projects\SchedulerLED\settings\SchedulerLED.Debug.driver.xcl" 
 }
 else
 {
-& "C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.0\common\bin\cspybat" -f "C:\My Documents\Continental\IAR\Devs\projects\SchedulerLED\settings\SchedulerLED.Debug.general.xcl" --debug_file=$debugfile --backend -f "C:\My Documents\Continental\IAR\Devs\projects\SchedulerLED\settings\SchedulerLED.Debug.driver.xcl" 
+& "C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.0\common\bin\cspybat" -f "D:\RepoGitSVN\AEP_BPSchedulerProject\projects\SchedulerLED\settings\SchedulerLED.Debug.general.xcl" --debug_file=$debugfile --backend -f "D:\RepoGitSVN\AEP_BPSchedulerProject\projects\SchedulerLED\settings\SchedulerLED.Debug.driver.xcl" 
 }

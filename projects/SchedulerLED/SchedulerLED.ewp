@@ -2030,6 +2030,6 @@
         </settings>
     </configuration>
     <file>
-        <name>$PROJ_DIR$\Main.c</name>
+        <name>$PROJ_DIR$\..\..\lib\APP\Scheduler\Main.c</name>
     </file>
 </project>
